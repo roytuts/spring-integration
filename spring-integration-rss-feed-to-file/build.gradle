@@ -1,0 +1,29 @@
+buildscript {
+	ext {
+		springBootVersion = '2.2.2.RELEASE'
+	}
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+plugins {
+    id 'java-library'
+    id 'org.springframework.boot' version '2.2.3.RELEASE'
+}
+
+sourceCompatibility = 12
+targetCompatibility = 12
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation("org.springframework.boot:spring-boot-starter-integration:${springBootVersion}")
+    implementation("org.springframework.integration:spring-integration-feed:5.2.3.RELEASE")
+	implementation("org.springframework.integration:spring-integration-file:5.2.3.RELEASE")
+}
