@@ -1,1 +1,1 @@
-You can read tutorial at https://www.roytuts.com/spring-integration/
+Please follow the tutorial https://roytuts.com/spring-integration/
